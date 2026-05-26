@@ -173,7 +173,7 @@ g++ -std=c++17 -Wall -Wextra -O2 src/main.cpp src/lexer.cpp -o leaf
 
 ## Why "Leaf"?
 
-Because every large system starts small.
+Because leaf.
 
 ---
 
