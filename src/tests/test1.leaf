@@ -1,26 +1,18 @@
-# Cool demo script
-
+// Cool demo script
 name = "Leaf"
-
 print("welcome to <name>")
 
-nums = [1, 2, 3, 4, 5]
-
-fun square(x)
-    return x * x
-
-for n -> nums
-    value = square(n)
-
-    if value > 10
-        print("big number: <value>")
-    else
-        print("small number: <value>")
-
 count = 5
-
-while count > 0
+while count > 0 {
     print("countdown: <count>")
     count = count - 1
+}
+
+x = 25
+if x > 10 {
+    print("big number: <x>")
+} else {
+    print("small number: <x>")
+}
 
 print("done")
