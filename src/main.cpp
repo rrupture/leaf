@@ -13,6 +13,15 @@
 
 namespace fs = std::filesystem;
 
+#define LEAF_VERSION "1.0.0"
+
+static void checkForUpdate() {
+    std::cout << "  Leaf v" << LEAF_VERSION << "\n";
+    std::cout << "  To update, run:\n";
+    std::cout << "    irm https://raw.githubusercontent.com/777rupture/leaf/main/install.ps1 | iex\n\n";
+    std::cout.flush();
+}
+
 // ─── Value type ──────────────────────────────────────────────────────────────
 
 struct Value {
@@ -438,6 +447,7 @@ static void printHelp() {
         "    leaf -run    <filename.leaf>   Run a Leaf source file\n"
         "    leaf -tokens <filename.leaf>   Show token output for a file\n"
         "    leaf -help                     Show this help message\n"
+        "    leaf -update                   Show how to update Leaf\n"
         "\n"
         "  Example:\n"
         "    leaf -create hello.leaf\n"
@@ -523,6 +533,7 @@ int main(int argc, char* argv[]) {
 
     std::string cmd = argv[1];
     if (cmd=="-help"||cmd=="--help"||cmd=="-h") { printHelp(); return 0; }
+    if (cmd=="-update") { checkForUpdate(); return 0; }
 
     if (argc < 3) {
         std::cerr << "leaf: missing filename. Try: leaf -help\n";
