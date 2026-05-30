@@ -1,6 +1,6 @@
 ## Author
 
-[777rupture](https://github.com/777rupture)
+[rrupture](https://github.com/rrupture)
 
 ---
 
@@ -16,7 +16,7 @@ A fast, minimal, dynamically-typed scripting language built in modern C++.
 **Windows** — paste this in PowerShell:
 
 ```powershell
-irm https://raw.githubusercontent.com/777rupture/leaf/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/rrupture/leaf/main/install.ps1 | iex
 ```
 
 Open a new terminal and you're good to go.
@@ -24,7 +24,7 @@ Open a new terminal and you're good to go.
 **Linux / macOS:**
 
 ```bash
-git clone https://github.com/777rupture/leaf.git
+git clone https://github.com/rrupture/leaf.git
 cd leaf
 g++ -std=c++17 -Wall -O2 src/main.cpp src/lexer.cpp -o leaf
 sudo mv leaf /usr/local/bin/leaf
@@ -252,7 +252,7 @@ bool(x)
 
 Syntax highlighting for `.leaf` files:
 
-1. Download from [leaf-vscode](https://github.com/777rupture/leaf-vscode)
+1. Download from [leaf-vscode](https://github.com/rrupture/leaf-vscode)
 2. Drop the folder into `C:\Users\yourname\.vscode\extensions\leaf-language-1.0.0\`
 3. Restart VS Code
 

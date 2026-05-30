@@ -1,9 +1,9 @@
 # Leaf Installer
-# Usage: irm https://raw.githubusercontent.com/777rupture/leaf/main/install.ps1 | iex
+# Usage: irm https://raw.githubusercontent.com/rrupture/leaf/main/install.ps1 | iex
 
 $ErrorActionPreference = "Stop"
 
-$repo    = "777rupture/leaf"
+$repo    = "rrupture/leaf"
 $exeName = "leaf.exe"
 $installDir = "$env:USERPROFILE\.leaf"
 

@@ -386,7 +386,7 @@ private:
     }
     ValuePtr evalAnd(std::shared_ptr<Env> env) {
         auto left=evalEq(env);
-        while (check(TokenType::AND)){pos++; auto r=evalEq(env); left=Value::fromBool(left->truthy()&&r->truthy());}
+        while (check(TokenType::AND)){pos++; auto r= evalEq(env); left=Value::fromBool(left->truthy()&&r->truthy());}
         return left;
     }
     ValuePtr evalEq(std::shared_ptr<Env> env) {
@@ -740,7 +740,7 @@ static void printHelp() {
 static void checkForUpdate() {
     std::cout << "  Leaf v" LEAF_VERSION "\n";
     std::cout << "  To update, run:\n";
-    std::cout << "    irm https://raw.githubusercontent.com/777rupture/leaf/main/install.ps1 | iex\n\n";
+    std::cout << "    irm https://raw.githubusercontent.com/rrupture/leaf/main/install.ps1 | iex\n\n";
     std::cout.flush();
 }
 
